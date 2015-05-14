@@ -47,8 +47,8 @@ for niter = 1:45;
     end
     freehouse = [freehouse; mover];     % free houses is previously free and just becoming free
     
-    nrow_mover = length(mover);
-    nrow_freehouse = length(freehouse);
+    nrow_mover = size(mover,1);
+    nrow_freehouse = size(freehouse,1);
     parcel = randperm(nrow_freehouse)';     % prepare random allocation of movers to free houses by randomizing houses
     for k = 1:nrow_freehouse;
         if k <= nrow_mover
