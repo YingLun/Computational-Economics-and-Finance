@@ -1,0 +1,92 @@
+% Computational Economics PS2 Q4
+
+clear, clc
+close all
+
+%% Parameter and function initialization
+alpha_k = 0.33;
+alpha_h = 0.33;
+s_k = 0.2;
+s_h = 0.2;
+delta_k = 0.1;
+delta_h = 0.06;
+n = 0.01;
+g = 0.015;
+ini_val = [3,3];
+ini_Jac = eye(2);
+
+fun = @(val) steady_state(val,alpha_k,alpha_h,s_k,s_h,...
+                        delta_k,delta_h,n,g);
+Jac = @(val) Jacobian(val,alpha_k,alpha_h,s_k,s_h,...
+                        delta_k,delta_h,n,g);
+fun_fp = @(val) steady_state_fixed_pt(val,alpha_k,alpha_h,s_k,s_h,...
+                        delta_k,delta_h,n,g);
+
+%% Q4.1
+k_star = (s_k/(n+g+delta_k))^((1-alpha_h)/(1-alpha_k-alpha_h))*...
+            (s_h/(n+g+delta_h))^((alpha_h)/(1-alpha_k-alpha_h));
+h_star = (s_h/(n+g+delta_h))^((1-alpha_k)/(1-alpha_k-alpha_h))*...
+            (s_k/(n+g+delta_k))^((alpha_k)/(1-alpha_k-alpha_h));
+x_star = [k_star;h_star];
+           
+%% Q4.3
+eps = 0.001;
+del = 0.001;
+max_it = 1000;
+stop_crit = [eps,del,max_it];
+
+x_hat = Newton_Method(fun,Jac,ini_val,stop_crit);
+disp(['Inf norm = ',num2str(max(abs(x_hat-x_star)))])
+
+eps = 1.e-20;
+del = 1.e-20;
+max_it = 1000;
+stop_crit = [eps,del,max_it];
+
+x_hat = Newton_Method(fun,Jac,ini_val,stop_crit);
+disp(['Inf norm = ',num2str(max(abs(x_hat-x_star)))])
+
+%% Q4.4
+eps = 0.001;
+del = 0.001;
+max_it = 1000;
+stop_crit = [eps,del,max_it];
+
+x_hat = Broyden_Method(fun,ini_Jac,ini_val,stop_crit);
+disp(['Inf norm = ',num2str(max(abs(x_hat-x_star)))])
+
+eps = 1.e-20;
+del = 1.e-20;
+max_it = 1000;
+stop_crit = [eps,del,max_it];
+
+x_hat = Broyden_Method(fun,ini_Jac,ini_val,stop_crit);
+disp(['Inf norm = ',num2str(max(abs(x_hat-x_star)))])
+
+%% Q4.5
+eps = 0.001;
+del = 0.001;
+max_it = 1000;
+stop_crit = [eps,del,max_it];
+
+x_hat = Inverse_Broyden_Method(fun,ini_Jac,ini_val,stop_crit);
+disp(['Inf norm = ',num2str(max(abs(x_hat-x_star)))])
+
+eps = 1.e-20;
+del = 1.e-20;
+max_it = 1000;
+stop_crit = [eps,del,max_it];
+
+x_hat = Inverse_Broyden_Method(fun,ini_Jac,ini_val,stop_crit);
+disp(['Inf norm = ',num2str(max(abs(x_hat-x_star)))])
+
+%% Q4.6
+eps = 0.0001;
+del = 0.001;
+max_it = 1000;
+stop_crit = [eps,del,max_it];
+
+[x_hat,x_history] = Fixed_Point_Method(fun_fp,ini_val,stop_crit,true);
+figure
+subplot(2,1,1)
+plot(

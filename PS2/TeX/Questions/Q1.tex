@@ -1,5 +1,2 @@
-\section*{Problem 1: Simple linear equation example}
-\begin{enumerate}
-\item 
-When we set \texttt{racism=0.5}, we get an error message.
-\end{enumerate}
+\section*{Problem 1: Getting Started with Github}
+When we set \texttt{racism=0.5}, we get an error message. The error occurs because in line 50 and 51 the command \texttt{nrow\_mover = length(mover)} and \texttt{nrow\_freehouse = length(freehouse)} respectively. However, when there is only one or two movers, the \texttt{length} commands returns three since there are three columns. Therefore, one should use \texttt{size(mover,1)} and \texttt{size(freehouse,1)} instead to get the number of rows. 

@@ -1,0 +1,16 @@
+function J = Jacobian(val,alpha_k,alpha_h,s_k,s_h,...
+                        delta_k,delta_h,n,g)
+%This function calculate the Jacobian of the human capital augmented Solow
+%growth model.
+
+k = val(1);
+h = val(2);
+
+J = ...
+    [alpha_k*s_k*k^(alpha_k-1)*h^alpha_h-(n+g+delta_k),...
+     alpha_h*s_k*k^alpha_h*h^(alpha_h-1);...
+     alpha_k*s_h*k^(alpha_k-1)*h^alpha_h,...
+     alpha_h*s_h*k^alpha_h*h^(alpha_h-1)-(n+g+delta_h)];
+
+end
+
