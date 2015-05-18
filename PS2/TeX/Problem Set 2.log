@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.12.18)  17 MAY 2015 16:33
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.8.13)  18 MAY 2015 12:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -386,7 +386,7 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
 (./Problem Set 2.aux) ) 
 Here is how much of TeX's memory you used:
  5397 strings out of 493315
- 72555 string characters out of 6137903
+ 72555 string characters out of 6137904
  283198 words of memory out of 5000000
  8708 multiletter control sequences out of 15000+600000
  13402 words of font info for 52 fonts, out of 8000000 for 9000
