@@ -1,0 +1,56 @@
+\section{Problem 3: The Consumption-Savings Problem with Human Capital}
+\begin{enumerate}
+\item 
+Consider the Lagrangian
+\begin{equation*}
+	\mathcal L=f(c_1,c_2)+\lambda_1g_1+\lambda_2g_2+\mu_1h_1+\mu_2h_2
+\end{equation*}
+where
+\begin{equation*}
+	f(c_1,c_2)=\frac{c_1^{1-\gamma}-1}{1-\gamma}+\beta\frac{c_2^{1-\gamma}-1}{1-\gamma}.
+\end{equation*}
+The Kuhn-Tucker conditions are
+\begin{align*}
+	\frac{\partial\mathcal L}{\partial c_1}&=c_1^{-\gamma}+\mu_1\overset{!}{=}0\\
+	\frac{\partial\mathcal L}{\partial c_2}&=\beta c_2^{-\gamma}+\mu_2\overset{!}{=}0\\
+	\frac{\partial\mathcal L}{\partial i_k}&=\lambda_1+\mu_1+\mu_2[-(1+r_k)]\overset{!}{=}0\\
+	\frac{\partial\mathcal L}{\partial i_h}&=\lambda_2+\mu_1+\mu_2[-\eta r_h((1-\delta_h)h_1+i_h)^{\eta-1}]\overset{!}{=}0\\
+	\lambda_1&\ge0,\qquad g_1=(1-\delta_k)k_1+i_k\ge0,\qquad\lambda_1 g_1=0\\
+	\lambda_2&\ge0,\qquad g_2=i_h\ge0,\qquad\lambda_2g_2=0
+\end{align*}
+
+\item
+Notice that if $\alpha_i>0$, $\alpha_i^+>0$ and $\alpha_i^-=0$, which is equivalent to $\lambda_i>0$ and $g_i=0$. Similarly, the Kuhn-Tucker conditions are the same as in the case of $\lambda_i=0$ in Part 2 when $\alpha_i<0$.
+
+\item
+Eight unknowns, namely, $\{c_1,c_2,\mu_1,\mu_2,\alpha_k,\alpha_h,i_k,i_h\}$.
+
+\item
+See \texttt{func.m} in \texttt{Q3}.
+
+\item 
+The solutions in order $\{c_1,c_2,\mu_1,\mu_2,\alpha_k,\alpha_h,i_k,i_h\}$ are (also list in Table 1):
+\begin{enumerate}
+\item
+$\{5.4546,5.6052,-0.0336,-0.0306,-0.8178,0.0925,-0.2811,0\}$.
+\item
+$\{1.8993,1.9517,-0.2772,-0.2520,-0.6375,-0.3798,-0.5435,0.1443\}$.
+\item
+$\{0.9498,1.0241,-1.1085,-0.9153,0.3188,-0.6975,-0.9500,0.4865\}$.
+\end{enumerate}
+
+\item
+From the result of $\alpha_k,\alpha_h$, we can calculate the corresponding multiplier $\lambda_{k}$ and $\lambda_{h}$. Results are in Table 1, where we can see only in the second case the two constraints are unbinding as the multipliers ($\lambda$) are 0. While in case 1, constraint for $i_{h}$ is binding and in case 3, constraint for $k_{2}$ is binding.
+\begin{table}
+\centering
+\begin{tabular}{cccc}
+\hline\hline	 & 	case 1 & 	case 2 & 	case 3\\
+\hline
+ 		$c_{1}$ & 	5.4546 & 	1.8993 & 	0.9498\\	$c_{2}$ & 	5.6052 & 	1.9517 & 	1.0241\\	$u_{1}$  & 	-0.0336 & 	-0.2772 & 	-1.1085\\	$u_{2}$  & 	-0.0306 & 	-0.2520 & 	-0.9153\\	$\alpha_{k}$ & 	-0.8178 & 	-0.6375 & 	0.3188\\	$\alpha_{h}$ & 	0.0925 & 	-0.3798 & 	-0.6975\\	$i_{k}$ & 	-0.2811 & 	-0.5435 & 	-0.9500\\	$i_{h}$ & 	0.0000 & 	0.1443 & 	0.4865\\	$\lambda_{k}$ & 	0.0000 & 	0.0000 & 	0.1016\\	$\lambda_{h}$ & 	0.0086 & 	0.0000 & 	0.0000\\	
+\hline\hline\end{tabular}
+\caption{Solutions}
+\end{table}
+ 
+
+\end{enumerate}
+

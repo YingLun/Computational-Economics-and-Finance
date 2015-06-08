@@ -1,0 +1,19 @@
+\section{Problem 2: Consumption Savings Problem}
+Writing the Lagrangian
+\begin{equation*}
+	\mathcal L=\sum^T_{t=1}\beta^tu(c_t)-\lambda_t(c_t+a_{t+1}-a_t(1+r)+w_t)
+\end{equation*}
+we have the first order conditions
+\begin{align*}
+\tag{$\frac{\partial\mathcal L}{\partial c_t}$}
+	\beta^tc_t^{-\theta}&=\lambda_t\\
+\tag{$\frac{\partial\mathcal L}{\partial a_{t+1}}$}
+	\lambda_t&=(1+r)\lambda_{t+1}\\
+\end{align*}
+We thus obtain the optimal consumption path being
+\begin{equation*}
+	c_{t+1}=[(1+r)\beta]^{\frac{1}{\theta}}c_t.
+\end{equation*}
+Numerical solution for any given $\theta$ can be calculated with \texttt{Q2.m} which make use of the MATLAB function \texttt{fmincon}.
+
+If we now assume $\theta=1$, the function does not work since the denominator of $u(c_t)$ is zero and the function is not defined. However, we can use the concept of limit, i.e. solve the problem with $\theta\to1$ instead, by letting $\theta=1+\epsilon$ for $\epsilon$ being a small number.
