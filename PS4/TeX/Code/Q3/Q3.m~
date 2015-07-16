@@ -1,0 +1,47 @@
+
+clc;clear;
+
+%% 3.2
+% parameters
+p = 0.8; % probability
+gamma_min = 1;
+gamma_max = 50;
+n_node = 15;
+fspace  = fundefn('cheb',n_node,gamma_min,gamma_max);
+gamma_grid  = funnode(fspace);
+T = funbas(fspace,gamma_grid);
+y =  func(p,gamma_grid);
+c = (T'*T)\(T'*y);
+
+gamma = linspace(1,50,1000);
+T_new = funbas(fspace,gamma');
+alpha = T_new*c;
+
+
+% plot alpha against gamma
+plot(gamma,alpha,'k','LineWidth',1.2);
+ylabel('$\alpha$','Fontsize',15,'Interpreter','latex');
+xlabel('$\gamma_i$','Fontsize',15,'Interpreter','latex');
+title('$\alpha$ against $\gamma_i$','Fontsize',20,'Interpreter','latex');
+
+%% 3.2
+
+func_use = @(gamma)0.8*1.12^(-gamma)-0.2*0.92^(-gamma);
+ini_val = 4;
+ini_Jac = 1;
+eps         = 1e-6;
+del         = 1e-5;
+max_it      = 1e6;
+stop_crit   = [eps,del,max_it];
+gamma_bar = Inverse_Broyden_Method(func_use,ini_Jac,ini_val,stop_crit);
+
+fspace_new = fundefn('cheb',n_node,gamma_bar,gamma_max);
+gamma_grid_new  = funnode(fspace_new);
+y =  func(p,gamma_grid_new);
+gamma_i = linspace(gamma_bar,gamma_max,1000);
+y_i = interp1(gamma_grid_new,y,gamma_i,'cubic');
+
+plot(gamma_i,y_i,'k','LineWidth',1.2);
+ylabel('$\alpha$','Fontsize',15,'Interpreter','latex');
+xlabel('$\gamma_i$','Fontsize',15,'Interpreter','latex');
+title('$\alpha$ against $\gamma_i$','Fontsize',20,'Interpreter','latex');

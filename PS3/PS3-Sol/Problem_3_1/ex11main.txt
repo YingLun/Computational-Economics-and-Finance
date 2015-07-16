@@ -1,0 +1,296 @@
+optimal x-value: 0.55982
+function value: 0.98483
+Warning: Gradient must be provided for trust-region method;
+  using line-search method instead.
+> In <a href="matlab: opentoline('C:\Programme\MATLAB\R2008a\toolbox\optim\optim\fminunc.m',281,1)">fminunc at 281</a>
+  In <a href="matlab: opentoline('E:\work\Lehre\Seminare\ZEW\Kurs I\english\Exercices\Ex-Solutions\Ex11\ex11main.m',28,1)">ex11main at 28</a>
+Optimization terminated: relative infinity-norm of gradient less than options.TolFun.
+optimal x-value: -1
+function value: -0.36788
+dbquit
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+ex11main
+dbquit
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+ex11main
+optimal x-value: 0.55982
+function value: 0.98483
+Warning: Gradient must be provided for trust-region method;
+  using line-search method instead.
+> In <a href="matlab: opentoline('C:\Programme\MATLAB\R2008a\toolbox\optim\optim\fminunc.m',281,1)">fminunc at 281</a>
+  In <a href="matlab: opentoline('E:\work\Lehre\Seminare\ZEW\Kurs I\english\Exercices\Ex-Solutions\Ex11\ex11main.m',28,1)">ex11main at 28</a>
+Optimization terminated: relative infinity-norm of gradient less than options.TolFun.
+optimal x-value: -1
+function value: -0.36788
+dbquit all
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+ex11main
+dbclear ('E:\work\Lehre\Seminare\ZEW\Kurs I\english\Exercices\Ex-Solutions\Ex11\ex11main.m', '22')
+dbquit
+uiopen('E:\work\Lehre\Seminare\ZEW\Kurs I\english\Exercices\Ex-Solutions\Ex11\f2.m', true);
+uiopen('E:\work\Lehre\Seminare\ZEW\Kurs I\english\Exercices\Ex-Solutions\Ex11\ex11main.m', true);
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+ex21main
+optimal x-value: 0.24903
+dbquit
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+ex21main
+optimal x-value: 0.24903
+function value for x=100 is -3.7201e-044
+optimal x-value: 1
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+ex21main
+dbquit all
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+ex21main
+dbquit all
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+ex21main
+dbquit all
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+ex21main
+dbquit all
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+ex21main
+dbquit all
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+ex21main
+dbquit
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+ex21main
+optimal x-value: 0.24903
+dbclear ('E:\work\Lehre\Seminare\ZEW\Kurs I\english\Exercices\Ex-Solutions\Ex21\ex21main.m', '59')
+dbquit
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+duopoly
+Optimization terminated: first-order optimality is less than options.TolFun.
+condition number in broydn is 1.512391e+000
+I am so happy that this thing has converged
+
+ysol =
+
+   16.2183
+
+
+zsol =
+
+   24.5549
+
+
+pysol =
+
+    0.0505
+
+
+pzsol =
+
+    0.0504
+
+% plot of function 1:
+xvec = [-2.0:0.01:1.0];
+fvec = feval(func,xvec);
+??? Undefined function or variable 'func'.
+
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+ex11main
+dbclear ('E:\work\Lehre\Seminare\ZEW\Kurs I\english\Exercices\Ex-Solutions\Ex11\ex11main.m', '13')
+dbcont
+dbquit
+dbclear ('E:\work\Lehre\Seminare\ZEW\Kurs I\english\Exercices\Ex-Solutions\Ex11\ex11main.m', '11')
+dbclear ('E:\work\Lehre\Seminare\ZEW\Kurs I\english\Exercices\Ex-Solutions\Ex11\ex11main.m', '11')
+dbclear ('E:\work\Lehre\Seminare\ZEW\Kurs I\english\Exercices\Ex-Solutions\Ex11\ex11main.m', '11')
+dbclear ('E:\work\Lehre\Seminare\ZEW\Kurs I\english\Exercices\Ex-Solutions\Ex11\ex11main.m', '11')
+% Modify expression to add input arguments.
+% Example:
+%   a = [1 2 3; 4 5 6]; 
+%   foo(a);
+
+ex11main
+if system_dependent('IsDebugMode')==1, dbstep; end
+dbcont
+dbclear ('E:\work\Lehre\Seminare\ZEW\Kurs I\english\Exercices\Ex-Solutions\Ex11\ex11main.m', '21')
+dbcont
+clc
+dbstop in newtonmin
+dbcont
+<a href="matlab: opentoline('E:\work\Lehre\Seminare\ZEW\Kurs I\english\Exercices\Ex-Solutions\Ex11\newtonmin.m',8,1)">8   </a>eps = 1e-5;   % precision parameter in stopping rule
+dbcont
+dbcont
+dbclear ('E:\work\Lehre\Seminare\ZEW\Kurs I\english\Exercices\Ex-Solutions\Ex11\newtonmin.m', '27')
+dbcont
+dbclear ('E:\work\Lehre\Seminare\ZEW\Kurs I\english\Exercices\Ex-Solutions\Ex11\newtonmin.m', '19')
+dbcont
+optimal x-value: 0.55982
+function value: 0.98483
+help fminunc
+ FMINUNC finds a local minimum of a function of several variables.
+    X = FMINUNC(FUN,X0) starts at X0 and attempts to find a local minimizer
+    X of the function FUN. FUN accepts input X and returns a scalar
+    function value F evaluated at X. X0 can be a scalar, vector or matrix. 
+ 
+    X = FMINUNC(FUN,X0,OPTIONS) minimizes with the default optimization
+    parameters replaced by values in the structure OPTIONS, an argument
+    created with the OPTIMSET function.  See OPTIMSET for details.  Used
+    options are Display, TolX, TolFun, DerivativeCheck, Diagnostics,
+    FunValCheck, GradObj, HessPattern, Hessian, HessMult, HessUpdate,
+    InitialHessType, InitialHessMatrix, MaxFunEvals, MaxIter, DiffMinChange
+    and DiffMaxChange, LargeScale, MaxPCGIter, PrecondBandWidth, TolPCG,
+    PlotFcns, OutputFcn, and TypicalX. Use the GradObj option to specify
+    that FUN also returns a second output argument G that is the partial
+    derivatives of the function df/dX, at the point X. Use the Hessian
+    option to specify that FUN also returns a third output argument H that
+    is the 2nd partial derivatives of the function (the Hessian) at the
+    point X. The Hessian is only used by the large-scale method, not the
+    line-search method. 
+ 
+    X = FMINUNC(PROBLEM) finds the minimum for PROBLEM. PROBLEM is a
+    structure with the function FUN in PROBLEM.objective, the start point
+    in PROBLEM.x0, the options structure in PROBLEM.options, and solver
+    name 'fminunc' in PROBLEM.solver. Use this syntax to solve at the 
+    command line a problem exported from OPTIMTOOL. The structure PROBLEM 
+    must have all the fields.
+ 
+    [X,FVAL] = FMINUNC(FUN,X0,...) returns the value of the objective 
+    function FUN at the solution X.
+ 
+    [X,FVAL,EXITFLAG] = FMINUNC(FUN,X0,...) returns an EXITFLAG that 
+    describes the exit condition of FMINUNC. Possible values of EXITFLAG 
+    and the corresponding exit conditions are
+ 
+      1  Magnitude of gradient smaller than the specified tolerance. 
+      2  Change in X smaller than the specified tolerance.
+      3  Change in the objective function value smaller than the specified 
+          tolerance (only occurs in the large-scale method).
+      0  Maximum number of function evaluations or iterations reached.
+     -1  Algorithm terminated by the output function.
+     -2  Line search cannot find an acceptable point along the current
+          search direction (only occurs in the medium-scale method).
+    
+    [X,FVAL,EXITFLAG,OUTPUT] = FMINUNC(FUN,X0,...) returns a structure 
+    OUTPUT with the number of iterations taken in OUTPUT.iterations, the 
+    number of function evaluations in OUTPUT.funcCount, the algorithm used 
+    in OUTPUT.algorithm, the number of CG iterations (if used) in
+    OUTPUT.cgiterations, the first-order optimality (if used) in
+    OUTPUT.firstorderopt, and the exit message in OUTPUT.message.
+ 
+    [X,FVAL,EXITFLAG,OUTPUT,GRAD] = FMINUNC(FUN,X0,...) returns the value 
+    of the gradient of FUN at the solution X.
+ 
+    [X,FVAL,EXITFLAG,OUTPUT,GRAD,HESSIAN] = FMINUNC(FUN,X0,...) returns the 
+    value of the Hessian of the objective function FUN at the solution X.
+ 
+    Examples
+      FUN can be specified using @:
+         X = fminunc(@myfun,2)
+ 
+    where myfun is a MATLAB function such as:
+ 
+        function F = myfun(x)
+        F = sin(x) + 3;
+ 
+      To minimize this function with the gradient provided, modify
+      the function myfun so the gradient is the second output argument:
+         function [f,g] = myfun(x)
+          f = sin(x) + 3;
+          g = cos(x);
+      and indicate the gradient value is available by creating an options
+      structure with OPTIONS.GradObj set to 'on' (using OPTIMSET):
+         options = optimset('GradObj','on');
+         x = fminunc(@myfun,4,options);
+ 
+      FUN can also be an anonymous function:
+         x = fminunc(@(x) 5*x(1)^2 + x(2)^2,[5;1])
+ 
+    If FUN is parameterized, you can use anonymous functions to capture the
+    problem-dependent parameters. Suppose you want to minimize the 
+    objective given in the function myfun, which is parameterized by its 
+    second argument c. Here myfun is an M-file function such as
+ 
+      function [f,g] = myfun(x,c)
+ 
+      f = c*x(1)^2 + 2*x(1)*x(2) + x(2)^2; % function
+      g = [2*c*x(1) + 2*x(2)               % gradient
+           2*x(1) + 2*x(2)];
+ 
+    To optimize for a specific value of c, first assign the value to c. 
+    Then create a one-argument anonymous function that captures that value 
+    of c and calls myfun with two arguments. Finally, pass this anonymous 
+    function to FMINUNC:
+ 
+      c = 3;                              % define parameter first
+      options = optimset('GradObj','on'); % indicate gradient is provided 
+      x = fminunc(@(x) myfun(x,c),[1;1],options)
+ 
+    See also <a href="matlab:help optimset">optimset</a>, <a href="matlab:help fminsearch">fminsearch</a>, <a href="matlab:help fminbnd">fminbnd</a>, <a href="matlab:help fmincon">fmincon</a>, @, <a href="matlab:help inline">inline</a>.
+
+    Reference page in Help browser
+       <a href="matlab:doc fminunc">doc fminunc</a>
+
+doc fminunc
+dbcont
+Warning: Gradient must be provided for trust-region method;
+  using line-search method instead.
+> In <a href="matlab: opentoline('C:\Programme\MATLAB\R2008a\toolbox\optim\optim\fminunc.m',281,1)">fminunc at 281</a>
+  In <a href="matlab: opentoline('E:\work\Lehre\Seminare\ZEW\Kurs I\english\Exercices\Ex-Solutions\Ex11\ex11main.m',27,1)">ex11main at 27</a>
+Optimization terminated: relative infinity-norm of gradient less than options.TolFun.
+dbcont
+dbclear ('E:\work\Lehre\Seminare\ZEW\Kurs I\english\Exercices\Ex-Solutions\Ex11\newtonmin.m', '8')
+dbcont
+optimal x-value: -1
+function value: -0.36788

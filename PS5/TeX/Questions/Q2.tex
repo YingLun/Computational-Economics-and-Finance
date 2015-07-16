@@ -1,0 +1,47 @@
+\section*{Problem b}
+\begin{enumerate}
+\item
+Substituting the budget constraint into the objective function,
+\begin{equation}
+	\max_{\{\alpha_i\}_{i=1}^n}\mathbb 
+		E\left[\left\{\frac{1}{1-\gamma}\left[(1+r^f+\sum^n_{i=1}\alpha_i(r_i-r^f)\right]W_0-W_{\min}\right\}^{1-\gamma}\right].
+\end{equation}
+The FOC wrt $\alpha_i$ would be
+\begin{equation}
+	\mathbb E\left[\left((1+r^f+\sum^n_{i=1}\alpha_i(r_i-r^f))W_0-W_{\min}\right)^{-\gamma}W_0(r_i-r^f)\right]\overset{!}{=}0.
+\end{equation}
+
+\item
+Assume the limiting case that $\gamma=1$ (log utility), the optimal portfolio holdings are reported in the following table.\\
+    \begin{center}
+        \begin{tabular}{ccccccc}
+        	\toprule \toprule
+        	 & 	\multicolumn{6}{c}{$W_{\min}$}	\\
+        	\cmidrule(lr){2-7} 
+        	$\alpha$ & 	0 & 	10 & 	20 & 	30 & 	40 & 	50\\
+        	\midrule
+        	$\alpha_1$ & 	1.280 & 	1.155 & 	1.029 & 	0.904 & 	0.778 & 	0.653\\
+        	$\alpha_2$ & 	0.640 & 	0.577 & 	0.515 & 	0.452 & 	0.389 & 	0.326\\
+        	\bottomrule
+        \end{tabular}
+    \end{center}
+Portfolio holdings decrease when $W_{\min}$ increases. This is because when the minimum wealth level one would like to achieve increases, one cannot take so much risk, since a bad shock would be very costly in terms of utility. One becomes more risk averse in some sense.
+
+\item
+The optimal portfolio holdings with constraints are reported in the following table.\\
+    \begin{center}
+        \begin{tabular}{ccccccc}
+        	\toprule \toprule
+        	 & 	\multicolumn{6}{c}{$W_{\min}$}	\\
+        	\cmidrule(lr){2-7} 
+        	$\alpha$ & 	0 & 	10 & 	20 & 	30 & 	40 & 	50\\
+        	\midrule
+        	$\alpha_1$ & 	1.000 & 	1.000 & 	1.000 & 	0.904 & 	0.778 & 	0.653\\
+			$\alpha_2$ & 	0.720 & 	0.622 & 	0.523 & 	0.452 & 	0.389 & 	0.326\\
+        	\bottomrule
+        \end{tabular}
+    \end{center}
+The constraint is binding when $W_{\min}\le20$. The agent thus holds more the second asset than in the unconstrained case to take more risk when the constraint is binding.
+
+\end{enumerate}
+
